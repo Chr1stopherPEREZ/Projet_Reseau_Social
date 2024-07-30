@@ -1,0 +1,362 @@
+/* STYLE GLOBALE */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/font/Roboto-Regular.ttf");
+  src: url("/font/Roboto-Bold.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.3em;
+  background-color: rgb(241, 241, 241);
+}
+
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+body .topbar {
+  background-color: rgba(44, 62, 80, 1);
+}
+
+body .topbar a {
+  color: rgb(255, 255, 255);
+}
+
+body .topbar .topbar-logo {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  top: 3px;
+}
+
+body .topbar .topbar-nav {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+body .topbar .topbar-nav a {
+  opacity: 0.67;
+  padding: 0 12px;
+  display: inline-block;
+}
+
+body .topbar .topbar-nav a:hover {
+  transition: 0.3s ease-in;
+}
+
+body .topbar .topbar-nav a:hover,
+body .topbar .topbar-nav a.active,
+body .footer a:hover,
+body .footer a.active {
+  opacity: 1;
+}
+
+/* BODY */
+
+body .container-main {
+  background-color: rgb(241, 241, 241);
+  padding: 20px 15px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* BARRE LATÉRALE DE NAVIGATION */
+
+body .container-main .sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+body .container-main .sidebar a {
+  display: block;
+  padding: 0.6em 0;
+  border: solid 1px transparent;
+  padding-left: 10px;
+  width: 50%;
+}
+
+body .container-main .sidebar a:hover,
+body .container-main .sidebar a.active {
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(219, 219, 219);
+  border-radius: 5px;
+}
+
+body .container-main .sidebar a.active::before,
+body .container-main .sidebar a:hover::before {
+  opacity: 1;
+}
+
+body .container-main .sidebar a::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("/img/ico/home.svg") center center / contain no-repeat;
+  margin-right: 20px;
+  margin-bottom: -1px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+body .container-main .sidebar .sidebar-messages::before {
+  background: url("/img/ico/message.svg") center center / contain no-repeat;
+}
+
+body .container-main .sidebar .sidebar-events::before {
+  background: url("/img/ico/calendar.svg") center center / contain no-repeat;
+}
+
+body .container-main .sidebar .sidebar-group::before {
+  background: url("/img/ico/group.svg") center center / contain no-repeat;
+}
+
+body .container-main .sidebar .sidebar-friend::before {
+  background: url("/img/ico/friend.svg") center center / contain no-repeat;
+}
+
+/* STYLE PUBLICATION */
+
+body .container-main .main .card {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(219, 219, 219);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+body .container-main .main .card .card-header {
+  margin: 15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body .container-main .main .card .card-header img {
+  float: left;
+  margin-right: 10px;
+}
+
+body .container-main .main .card .card-header .title {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  margin-bottom: 5px;
+  padding-top: 2.5px;
+}
+
+body .container-main .main .card .card-body .card-body-content {
+  margin: 15px 10px;
+}
+
+body .container-main .main .card .card-body .card-body-content a {
+  text-decoration: underline;
+}
+
+body .container-main .main .card img {
+  margin: 0;
+}
+
+body .container-main .main .card .card-footer {
+  background-color: rgb(251, 251, 251);
+  border-top: solid 1px rgb(219, 219, 219);
+  height: 43px;
+  font-size: 12px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .container-main .main .card .card-footer a {
+  display: inline-block;
+}
+
+body .container-main .main .card .card-footer a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body .container-main .main .card .card-footer .like {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("/img/ico/like.svg") center center / contain no-repeat;
+  margin-right: 4px;
+  margin-bottom: -5px;
+}
+
+body .container-main .main .card .card-footer .comment {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("/img/ico/comment.svg") center center / contain no-repeat;
+  margin-right: 4px;
+  margin-bottom: -5px;
+}
+
+/* DEUXIÈME BARRE LATÉRALE */
+
+body .container-main .aside .title {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  margin-bottom: 5px;
+  padding-top: 2.5px;
+}
+
+body .container-main .aside .title:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body .container-main .aside .friend-suggestion h2,
+body .container-main .aside .friend-suggestion .friend-body .friend-name {
+  font-size: 16px;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+body .container-main .aside .friend-suggestion hr {
+  margin-top: 2px;
+  margin-bottom: 0;
+  border: transparent;
+  background-color: rgb(0, 0, 0);
+  height: 1.5px;
+}
+
+body .container-main .aside .friend-suggestion .friend {
+  margin: 14px 0;
+  display: flex;
+}
+
+body .container-main .aside .friend-suggestion .friend .friend-picture1,
+body .container-main .aside .friend-suggestion .friend .friend-picture2,
+body .container-main .aside .friend-suggestion .friend .friend-picture3,
+body .container-main .aside .friend-suggestion .friend .friend-picture4 {
+  height: 73px;
+  width: 73px;
+  margin-right: 10px;
+  background-size: cover; /* S'assure que l'image couvre entièrement le conteneur */
+  background-position: center; /* Centre l'image dans le conteneur */
+  border-radius: 50%; /* Pour rendre les images rondes */
+}
+
+body .container-main .aside .friend-suggestion .friend .friend-picture1 {
+  background-image: url("/img/avatar3.png");
+}
+
+body .container-main .aside .friend-suggestion .friend .friend-picture2 {
+  background-image: url("/img/avatar4.png");
+}
+
+body .container-main .aside .friend-suggestion .friend .friend-picture3 {
+  background-image: url("/img/avatar5.png");
+}
+
+body .container-main .aside .friend-suggestion .friend .friend-picture4 {
+  background-image: url("/img/avatar6.png");
+}
+
+body
+  .container-main
+  .aside
+  .friend-suggestion
+  .friend
+  .friend-body
+  .friend-add:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body .container-main .aside .card a:hover,
+body .container-main .aside .card-body-content a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* FOOTER */
+
+body .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 7.5%;
+  background-color: rgba(44, 62, 80, 1);
+}
+
+body .footer div p,
+#final-line {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+body .footer a {
+  opacity: 0.67;
+  padding: 0 12px;
+}
+
+body .footer a:hover {
+  transition: 0.3s ease-in;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+  body .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 51px;
+    height: 64px;
+  }
+
+  body .topbar .topbar-logo,
+  body .topbar .topbar-nav {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  body .container-main {
+    display: flex;
+  }
+
+  body .container-main .sidebar {
+    width: 180px;
+    flex: none;
+    display: block;
+  }
+
+  body .container-main .sidebar a {
+    width: 100%;
+  }
+
+  body .container-main .main {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  body .aside {
+    width: 310px;
+    flex: none;
+  }
+}
+
+/* Style.css */
